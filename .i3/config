@@ -168,4 +168,4 @@ bindsym Control+Mod1+L exec dm-tool lock
 client.focused #5c7899 #ff00ff #ffffff
 
 # Auto Start
-# exec --no-startup-id feh --bg-scale ~/Images/blue-pixel.jpg
+exec --no-startup-id feh --bg-scale ~/Images/purple-polygon.jpg

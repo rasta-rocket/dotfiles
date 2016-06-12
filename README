@@ -1,11 +1,12 @@
-1. Set the keyboard in azerty. Follow the instructions in:
-https://doc.ubuntu-fr.org/tutoriel/configurer_le_clavier#bug_du_clavier_qui_repasse_en_qwerty_a_chaque_demarrage_sous_certaines_versions_recentes
+1. Install feh viewer:
+sudo apt-get install feh
 
 2. Install i3 gaps:
+Install i3status suckless (dunst)
 https://github.com/Airblader/i3/wiki/Compiling-&-Installing
 
-3. Install feh viewer:
-sudo apt-get install feh
+3. Set the keyboard in azerty. Follow the instructions in:
+https://doc.ubuntu-fr.org/tutoriel/configurer_le_clavier#bug_du_clavier_qui_repasse_en_qwerty_a_chaque_demarrage_sous_certaines_versions_recentes
 
 4. Copy the gnome-terminal conf file
 .gconf/apps/gnome-terminal/profiles/Default/%gconf.xml
