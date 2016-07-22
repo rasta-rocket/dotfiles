@@ -24,11 +24,11 @@ DEPENDENCIES="exuberant-ctags"
 UTILITIES="tree curl"
 
 echo "Install dependencies: Begin"
-apt-get install $DEPENDENCIES
+apt-get -y install $DEPENDENCIES
 echo "Install dependencies: End"
  
 echo "Install utilities: Begin"
-apt-get install $UTILITIES
+apt-get -y install $UTILITIES
 echo "Install utilities: End"
 
 echo "Install bash prompt"
@@ -40,5 +40,5 @@ cp .vimrc $HOME
 cp -r .vim $HOME
 
 echo "Install Vundle"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vima
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
