@@ -32,13 +32,13 @@ apt-get -y install $UTILITIES
 echo "Install utilities: End"
 
 echo "Install bash prompt"
-curl https://raw.githubusercontent.com/riobard/bash-powerline/master/bash-powerline.sh > ~/.bash-powerline.sh
-echo "source ~/.bash-powerline.sh" >> .bashrc
+curl https://raw.githubusercontent.com/riobard/bash-powerline/master/bash-powerline.sh > $HOME/.bash-powerline.sh
+echo "source ~/.bash-powerline.sh" >> $HOME/.bashrc
 
 echo "Install vim"
 cp .vimrc $HOME
 cp -r .vim $HOME
 
 echo "Install Vundle"
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/VundleVim/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
