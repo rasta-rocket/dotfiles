@@ -17,8 +17,7 @@ https://doc.ubuntu-fr.org/tutoriel/configurer_le_clavier#bug_du_clavier_qui_repa
 6. Set the sound startup time at:
 /usr/share/sounds/ubuntu/stereo/system-ready.ogg
 
-lockscreen
 keybinding
-script to launch VPN
+notification
 statusbar
 copy i3config
