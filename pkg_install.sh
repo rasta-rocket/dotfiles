@@ -24,11 +24,11 @@ DEPENDENCIES="exuberant-ctags"
 UTILITIES="tree curl"
 
 echo "Install dependencies: Begin"
-apt-get -y install $DEPENDENCIES
+sudo apt-get -y install $DEPENDENCIES
 echo "Install dependencies: End"
  
 echo "Install utilities: Begin"
-apt-get -y install $UTILITIES
+sudo apt-get -y install $UTILITIES
 echo "Install utilities: End"
 
 echo "Install bash prompt"
