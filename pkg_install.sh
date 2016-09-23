@@ -32,7 +32,7 @@ sudo apt-get -y install $UTILITIES
 echo "Install utilities: End"
 
 echo "Install bash prompt"
-curl https://raw.githubusercontent.com/riobard/bash-powerline/master/bash-powerline.sh > $HOME/.bash-powerline.sh
+curl https://raw.githubusercontent.com/rasta-rocket/bash-powerline/master/bash-powerline.sh > $HOME/.bash-powerline.sh
 echo "source ~/.bash-powerline.sh" >> $HOME/.bashrc
 
 echo "Install vim"
