@@ -18,17 +18,19 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'pangloss/vim-javascript'
+Plugin 'stephpy/vim-yaml'
 " Plugin 'davidhalter/jedi-vim'
-" Plugin 'scrooloose/syntastic'
-" Plugin 'hynek/vim-python-pep8-indent'
-" Plugin 'Valloric/YouCompleteMe'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'hynek/vim-python-pep8-indent'
+"Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/sh.vim'
 Plugin 'ervandew/supertab'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'majutsushi/tagbar'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
+"Plugin 'L9'
 Plugin 'bash-support.vim'
 Plugin 'taglist.vim'
 
@@ -94,3 +96,5 @@ let g:airline_symbols.linenr = ''
 
 set hlsearch
 hi Search cterm=NONE ctermfg=white ctermbg=blue
+
+let g:Tlist_WinWidth=60
