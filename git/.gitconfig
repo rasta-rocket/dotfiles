@@ -7,6 +7,8 @@
 	username = bfernando		
 [credential]
 	helper = cache --timeout=3600
+[http]
+	sslVerify = false
 [alias]
 	slog = log --pretty=format:'%Cgreen%h%Creset -- %cd -- message: %s'
 [push]
