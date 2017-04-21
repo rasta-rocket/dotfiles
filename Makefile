@@ -38,7 +38,7 @@ light-prompt:
 	printf "# light-prompt\nsource ${HOME_DIR}/light-prompt.sh\n\n" >> ${HOME_DIR}/.bashrc
 vundle:
 	mkdir -p ${HOME_DIR}/.vim/bundle
-	rsync ${GIT_DIR}/Vundle.vim ${HOME_DIR}/.vim/bundle
+	rsync -r ${GIT_DIR}/Vundle.vim ${HOME_DIR}/.vim/bundle
 	vim +PluginInstall +qall
 fzf:
 	mkdir -p ${HOME_DIR}/.fzf
