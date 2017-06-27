@@ -6,4 +6,4 @@ alias ls='ls -l --color=auto'
 alias rg='ranger'
 alias emacs='emacs -nw'
 alias rgrep='rgrep -n --colour'
-
+alias tmux='tmux -2'
