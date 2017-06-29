@@ -1,6 +1,7 @@
 htop
 tree
 traceroute
+wget
 curl
 git
 tig
