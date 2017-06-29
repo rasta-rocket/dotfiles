@@ -31,6 +31,8 @@ git:
 i3:
 	rsync -r i3/ ${HOME_DIR}
 bash:
+	mkdir -p ${HOME_DIR}/.bash_completion.d
+	cat bash/.bash_completion >> ${HOME_DIR}/.bash_completion
 	cat bash/.profile >> ${HOME_DIR}/.profile
 	cat bash/.bashrc >> ${HOME_DIR}/.bashrc
 light-prompt:
@@ -45,7 +47,14 @@ fzf:
 	cp ${GIT_DIR}/fzf/shell/key-bindings.bash ${HOME_DIR}/.fzf
 	sudo cp ${GIT_DIR}/fzf/bin/fzf-tmux ${BIN_DIR}
 	printf "# fzf\nsource ~/.fzf/key-bindings.bash\nexport  FZF_DEFAULT_OPTS=''\n\n" >> ${HOME_DIR}/.bashrc
-
+hub:
+	URL="https://github.com/github/hub/releases/download/v2.2.9/hub-linux-amd64-2.2.9.tgz"; \
+	TMP_DIR=$(shell mktemp -d); \
+	wget $${URL} -P $${TMP_DIR}; \
+	HUB=$$(basename $$URL) && HUB=$${HUB%.tgz}; \
+	HUB_DIR=$${TMP_DIR}/$${HUB}; \
+	tar -xzf $${HUB_DIR}.tgz -C $${TMP_DIR}; \
+	cp $${HUB_DIR}/bin/hub ${BIN_DIR}; cp $${HUB_DIR}/etc/hub.bash_completion.sh ${HOME_DIR}/.bash_completion.d
 clean:
 	rm -rf dot
 .PHONY: install ${TARGET} clean
