@@ -54,7 +54,7 @@ hub:
 	HUB=$$(basename $$URL) && HUB=$${HUB%.tgz}; \
 	HUB_DIR=$${TMP_DIR}/$${HUB}; \
 	tar -xzf $${HUB_DIR}.tgz -C $${TMP_DIR}; \
-	cp $${HUB_DIR}/bin/hub ${BIN_DIR}; cp $${HUB_DIR}/etc/hub.bash_completion.sh ${HOME_DIR}/.bash_completion.d
+	sudo cp $${HUB_DIR}/bin/hub ${BIN_DIR}; cp $${HUB_DIR}/etc/hub.bash_completion.sh ${HOME_DIR}/.bash_completion.d
 clean:
 	rm -rf dot
 .PHONY: install ${TARGET} clean
