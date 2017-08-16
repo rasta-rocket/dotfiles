@@ -1,4 +1,5 @@
 #!/bin/bash
-for bcfile in ~/.bash_completion.d/* ; do
+FILES=$(ls ~/.bash_completion.d | grep -v total)
+for bcfile in $FILES; do
   . $bcfile
 done
